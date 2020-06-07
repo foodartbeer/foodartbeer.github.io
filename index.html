@@ -1,75 +1,103 @@
 <html>
-    <head>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js" integrity="sha256-AdQN98MVZs44Eq2yTwtoKufhnU+uZ7v2kXnD5vqzZVo=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <style>
-            h1{
-            }
-            #bg-video{
-                min-width:100%;
-                min-height:100%;
-                transform: translate(-50%, 0%);
-    margin-left: 50%;
-            }
-            #bg-video-container{
- 
-                width:100vw;
-                height:100vh;
-    position: absolute;
-    top:0px;
 
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"
+        integrity="sha256-AdQN98MVZs44Eq2yTwtoKufhnU+uZ7v2kXnD5vqzZVo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
 
-overflow:hidden;
+        #bg-video {
+            min-width: 100%;
+            min-height: 100%;
+            transform: translate(-50%, 0%);
+            margin-left: 50%;
+        }
 
-            }
-            h1:hover{
-                text-decoration:underline;
-            }
-            .food:hover{
-                color: blue;
-                text-shadow:none;
+        #bg-video-container {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            overflow: hidden;
+            top:0px;
+        }
 
-            }
-            .art:hover{
-                color: purple;
-                text-shadow:none;
+/*
+        h1:hover {
+            text-decoration: underline;
+        }
 
-            }
-            .beer:hover{
-                color: red;
-                text-shadow:none;
+        .food:hover {
+            color: blue;
+            text-shadow: none;
 
-            }
-            .food{
-                //text-shadow:3px 3px blue;
-            }
-            .art{
-                //text-shadow:3px 3px purple;
-            }
-            .beer{
-                //text-shadow:3px 3px red;
-            }
+        }
 
-            body{
-                padding-top:20vh;
+        .art:hover {
+            color: purple;
+            text-shadow: none;
+
+        }
+
+        .beer:hover {
+            color: red;
+            text-shadow: none;
+
+        } */
+
+        body {
+            padding-top: 20vh;
+            color: white;
+            font-family:futura;
+        }
+        .caption{
+            position: absolute;
+    bottom: 0px;
+    right: 0px;
+    max-width: 10em;
+    margin: 10px;
+    
+        }
+        a:link{
             color:white;
-            }
-        </style>
-    </head>
-    <body>
-        <!-- The video -->
-<div id="bg-video-container">
+            text-decoration:underline;
+        }
+        a:visited{
+            color:white;
+        }
+        .caption a:link{
+            color:white;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <!-- The video -->
+    <div id="bg-video-container">
         <video autoplay muted loop id="bg-video">
-    <source src="media/slowmo/p4p-slowmo-60120.mp4" type="video/mp4">
-  </video>
-</div>
-  <div class="container">
-<div class="row">
-    <div class="col-lg-4"><h1 class="food">food</h1></div>
-    <div class="col-lg-4"><h1 class="art">art</h1></div>
-    <div class="col-lg-4"><h1 class="beer">beer</h1></div>
-</div>
-</div>
-    </body>
+            <source src="media/slowmo/p4p-slowmo-60120.mp4" type="video/mp4">
+        </video>
+
+        <div class="caption">#fabp4p by <a href="http://www.adamjoday.com/">Adam J O'Day</a> with <a>Tarreneh Eftekhari</a></div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h1 class="food">food</h1>
+            </div>
+            <div class="col-lg-4">
+                <h1 class="art">art</h1>
+            </div>
+            <div class="col-lg-4">
+                <h1 class="beer">beer</h1>
+            </div>
+        </div>
+
+    </div>
+</body>
+
 </html>
