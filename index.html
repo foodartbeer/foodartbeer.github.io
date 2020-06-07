@@ -4,14 +4,70 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <style>
-  
+            h1{
+            }
+            #bg-video{
+                min-width:100%;
+                min-height:100%;
+            }
+            #bg-video-container{
+ 
+                width:100vw;
+                height:100vh;
+    position: absolute;
+    top:0px;
+
+
+overflow:hidden;
+
+            }
+            h1:hover{
+                text-decoration:underline;
+            }
+            .food:hover{
+                color: blue;
+                text-shadow:none;
+
+            }
+            .art:hover{
+                color: purple;
+                text-shadow:none;
+
+            }
+            .beer:hover{
+                color: red;
+                text-shadow:none;
+
+            }
+            .food{
+                //text-shadow:3px 3px blue;
+            }
+            .art{
+                //text-shadow:3px 3px purple;
+            }
+            .beer{
+                //text-shadow:3px 3px red;
+            }
+
+            body{
+                padding-top:20vh;
+            color:white;
+            }
         </style>
     </head>
     <body>
+        <!-- The video -->
+<div id="bg-video-container">
+        <video autoplay muted loop id="bg-video">
+    <source src="media/slowmo/p4p-slowmo-60120.mp4" type="video/mp4">
+  </video>
+</div>
+  <div class="container">
 <div class="row">
-    <div class="col-md-4"><h1>food</h1></div>
-    <div class="col-md-4"><h1>art</h1></div>
-    <div class="col-md-4"><h1>beer</h1></div>
+    <div class="col-md-4"><h1 class="food">food</h1></div>
+    <div class="col-md-4"><h1 class="art">art</h1></div>
+    <div class="col-md-4"><h1 class="beer">beer</h1></div>
+</div>
 </div>
     </body>
 </html>
